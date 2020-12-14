@@ -31,13 +31,13 @@
 		'</ul>';
 
 	/**
-	 * Construct a new FileActionsAppDrawer instance
-	 * @constructs FileActionsAppDrawer
+	 * Construct a new FileActionsApplicationSelectMenu instance
+	 * @constructs FileActionsApplicationSelectMenu
 	 * @memberof OCA.Files
 	 */
-	var FileActionsAppDrawer = OC.Backbone.View.extend({
+	var FileActionsApplicationSelectMenu = OC.Backbone.View.extend({
 		tagName: 'div',
-		className: 'fileActionsAppDrawer popovermenu bubble hidden open menu',
+		className: 'fileActionsApplicationSelectMenu popovermenu bubble hidden open menu',
 
 		/**
 		 * Current context
@@ -51,10 +51,10 @@
 		},
 
 		template: function(data) {
-			if (!OCA.Files.FileActionsAppDrawer._TEMPLATE) {
-				OCA.Files.FileActionsAppDrawer._TEMPLATE = Handlebars.compile(TEMPLATE_MENU);
+			if (!OCA.Files.FileActionsApplicationSelectMenu._TEMPLATE) {
+				OCA.Files.FileActionsApplicationSelectMenu._TEMPLATE = Handlebars.compile(TEMPLATE_MENU);
 			}
-			return OCA.Files.FileActionsAppDrawer._TEMPLATE(data);
+			return OCA.Files.FileActionsApplicationSelectMenu._TEMPLATE(data);
 		},
 
 		/**
@@ -128,7 +128,7 @@
 		}
 	});
 
-	OCA.Files.FileActionsAppDrawer = FileActionsAppDrawer;
+	OCA.Files.FileActionsApplicationSelectMenu = FileActionsApplicationSelectMenu;
 
 })();
 

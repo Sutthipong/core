@@ -992,12 +992,12 @@ html.ie8 #controls .button.new {
 	right: inherit;
 }
 
-.fileActionsAppDrawer.bubble{
+.fileActionsApplicationSelectMenu.bubble{
 	right: initial;
 	left: 45px !important;
 }
 
-.fileActionsAppDrawer.bubble:after{
+.fileActionsApplicationSelectMenu.bubble:after{
 	right: initial;
 	left: 15px !important;
 }

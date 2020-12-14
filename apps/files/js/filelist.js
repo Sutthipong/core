@@ -675,7 +675,7 @@
 
 						// don't show app drawer for directories as we want to open them per default
 						if (Object.keys(actionsWithoutAll).length > 1 && type !== 'dir') {
-							var appDrawer = new OCA.Files.FileActionsAppDrawer();
+							var appDrawer = new OCA.Files.FileActionsApplicationSelectMenu();
 							appDrawer.show(context, $tr.find('td.filename'));
 							event.preventDefault();
 							return;
